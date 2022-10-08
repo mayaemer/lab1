@@ -1,0 +1,50 @@
+.row {
+    display: grid; 
+    grid-template-columns: 25% 25% 25% 25%; 
+    grid-template-rows: 100%;
+    grid-template-areas: "col-1 col-2 col-3 col-4";
+}
+
+.col-1 {border: 2px solid black;}
+.col-2 {border: 2px solid black;}
+.col-3 {border: 2px solid black;}
+.col-4 {border: 2px solid black;}
+
+
+@media screen and (max-width:720px) {
+    .row{ display: grid; 
+    grid-template-columns: 25% 25%  
+    grid-template-rows: 50% 50%;
+    border:none;
+    grid-template-areas:"col-1 col-2" 
+                        "col-3 col-4";}
+    .col-1 { grid-area: col-1;
+            border: 2px solid black;}
+    .col-2 { grid-area: col-2;
+        border: 2px solid black;}
+    .col-3 { grid-area: col-3;
+        border: 2px solid black;}
+    .col-4 { grid-area: col-4;
+        border: 2px solid black;}
+    
+}
+
+@media screen and (max-width:360px) {
+    .row{ display: grid; 
+    grid-template-columns: 25%  
+    grid-template-rows: 100%;
+    border:none;
+    grid-template-areas:"col-1"
+                        "col-2" 
+                        "col-3" 
+                        "col-4";}
+    .col-1 { grid-area: col-1;
+            border: 2px solid black;}
+    .col-2 { grid-area: col-2;
+        border: 2px solid black;}
+    .col-3 { grid-area: col-3;
+        border: 2px solid black;}
+    .col-4 { grid-area: col-4;
+        border: 2px solid black;}
+    
+}
