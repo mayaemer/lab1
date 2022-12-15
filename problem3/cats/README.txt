@@ -8,3 +8,6 @@ Cats Extension added functionality:
 - changed link elements to say 'links to cats' and coloured them orange
 - changed input elements to say 'search for cats' and coloured them pink
 - changed h3 elements to say look at this, coloured them red and made them bold font
+
+
+Github link: https://github.com/mayaemer/lab1
